@@ -4,6 +4,7 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+  font-family: "poppins";
 }
 
 .container {
@@ -75,24 +76,38 @@
   width: 100%;
 }
 
+.header {
+  z-index: 999;
+}
 .header .container .navbar {
   padding: 0 45px;
   height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid black;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .header .container .navbar .nav-menu ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
+  gap: 40px;
 }
-.header .container .navbar .nav-menu .nav-stic ul {
+.header .container .navbar .nav-menu ul li a {
+  color: black;
+  font-weight: 400;
+}
+.header .container .navbar .nav-stic ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 20px;
+}
+.header .container .navbar .nav-stic ul li a {
+  color: #747479;
+  font-size: 18px;
+  font-weight: 100;
 }
 
 @media screen and (max-width: 600px) {
