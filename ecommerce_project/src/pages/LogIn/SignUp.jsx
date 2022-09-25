@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import loginStyle from "./login.module.css";
 import { Form, FormGroup, Input, Button, Label } from "reactstrap";
 import { useDispatch, useSelector } from "react-redux";
-import { addUser, fetchUsers, selectAllUsers } from "../../Redux/users/userSlice";
+import { addUser, fetchUsers, selectAllUsers } from "../../redux/userSlice/userSlice";
 import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
@@ -33,7 +33,6 @@ const SignUp = () => {
     <div>
       <div className={loginStyle.container}>
         <div className={loginStyle.card}>
-          <h2>tap.az</h2>
           <Form onSubmit={handleSubmit}>
             <FormGroup>
               <Label for="exampleEmail">Email</Label>

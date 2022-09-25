@@ -1,11 +1,12 @@
-import { createSlice, createEntityAdapter, createAsyncThunk } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk, createEntityAdapter } from "@reduxjs/toolkit";
+
 const userAdapter = createEntityAdapter({
   selectIds: (user) => user.id,
 });
 
 export const fetchUsers = createAsyncThunk("user/fetchUsers", async () => {
   try {
-    const response = await fetch("http://localhost3000/users");
+    const response = await fetch("http://localhost:3000/users");
     return await response.json();
   } catch (error) {
     throw new error(error);
@@ -13,8 +14,9 @@ export const fetchUsers = createAsyncThunk("user/fetchUsers", async () => {
 });
 
 export const addUser = createAsyncThunk("user/addUser", async (user) => {
+  console.log(user,"FFff")
   try {
-    const response = await fetch("http://localhost3000/users", {
+    const response = await fetch("http://localhost:3000/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -33,7 +35,7 @@ const userSlice = createSlice({
     status: "idle",
     error: null,
   }),
-  reducers: {},
+  reducer: {},
   extraReducers: {
     [fetchUsers.pending]: (state, action) => {
       state.status = "loading";
