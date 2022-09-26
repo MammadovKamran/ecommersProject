@@ -7,9 +7,11 @@ import Contact from "../pages/Contact/Contact";
 import Shop from "../pages/Shop/Shop";
 import About from "../pages/About/About";
 import Blog from "../pages/Blog/Blog";
+
 const Dashboard = () => {
   return (
     <div>
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<Shop />} />
