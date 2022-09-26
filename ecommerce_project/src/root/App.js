@@ -9,9 +9,10 @@ const App = () => {
   const { pathname } = useLocation();
   return (
     <div>
-      {pathname !== "/signUp" && pathname !== "/signIn" && pathname !== "/forgotPassword" && pathname !== "/resetPassword" ? <Header /> : <div />}
+
+      {pathname !== "/signUp" && pathname !== "/signIn"  && pathname !== "/forgotPassword" && pathname !== "/resetPassword"  ? <Header /> : <div />}
       <Dashboard />
-      {pathname !== "/signUp" && pathname !== "/signIn" && pathname !== "/forgotPassword" && pathname !== "/resetPassword" ? <Footer /> : <div />}
+      {pathname !== "/signUp" && pathname !== "/signIn" && pathname !== "/forgotPassword" && pathname !== "/resetPassword"  ? <Footer /> : <div />}
 
     </div>
   );

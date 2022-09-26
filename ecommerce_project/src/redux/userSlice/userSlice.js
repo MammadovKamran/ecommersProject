@@ -14,7 +14,6 @@ export const fetchUsers = createAsyncThunk("user/fetchUsers", async () => {
 });
 
 export const addUser = createAsyncThunk("user/addUser", async (user) => {
-  console.log(user,"FFff")
   try {
     const response = await fetch("http://localhost:3000/users", {
       method: "POST",
