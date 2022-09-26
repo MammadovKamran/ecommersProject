@@ -1,10 +1,9 @@
-
 .navBars {
     position: relative;
     padding: 10px;
 
     span {
-       background-color: #747479;
+        background-color: #747479;
         width: 27px;
         height: 2px;
         display: block;
@@ -21,7 +20,7 @@
 .navBars.change {
 
     span {
-        background-color:#3577F0 ;
+        background-color: #3577F0;
 
         &:nth-child(2) {
             opacity: 0;
@@ -53,7 +52,7 @@
     // position: sticky;
     // top: 30px;
     // position: absolute;
-    
+
 
 
     .container {
@@ -81,8 +80,29 @@
 
                     li {
                         a {
+                            position: relative;
                             color: black;
                             font-weight: 400;
+
+                            &:after {
+                                content: "";
+                                position: absolute;
+                                background-color: #3577F0;
+                                height: 3px;
+                                width: 0%;
+                                left: 0;
+                                bottom: -10px;
+                                transition: 0.3s;
+                            }
+
+                            &:hover::after {
+                                width: 100%;
+                                
+                            }
+
+                            &:hover {
+                                font-weight: 500;
+                            }
                         }
                     }
                 }
@@ -105,6 +125,30 @@
                             color: #747479;
                             font-size: 18px;
                             font-weight: 100;
+                            position: relative;
+                            z-index: 0;
+
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                top: 50%;
+                                left: 52%;
+                                transform: translate(-50%, -50%);
+                                width: 0px;
+                                height: 0px;
+                                background-color: rgb(255, 73, 124);
+                                transition: 0.3s;
+                                border-radius: 50%;
+                                z-index: -3;
+                            }
+
+                            &:hover::after{
+                                height: 35px;
+                                width: 35px;
+                            }
+                            &:hover{
+                                color: white;
+                            }
                         }
                     }
                 }
@@ -118,12 +162,12 @@
 
 
     .header {
-        
+
 
         .container {
 
             .navbar {
-                padding: 0; 
+                padding: 0;
 
                 .nav-menu {
                     display: block;
@@ -166,8 +210,8 @@
 @media screen and (min-width: 600px) and(max-width:992px) {
 
 
-    
-    .header { 
+
+    .header {
 
         .container {
 
@@ -212,10 +256,10 @@
 
 @media screen and (min-width: 992px) {
 
-    .header{
-        .container{
-            .navbar{
-                .navBars{
+    .header {
+        .container {
+            .navbar {
+                .navBars {
                     display: none;
                 }
             }

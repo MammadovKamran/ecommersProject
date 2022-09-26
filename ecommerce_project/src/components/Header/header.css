@@ -47,8 +47,25 @@
   gap: 40px;
 }
 .header .container .navbar .nav-menu ul li a {
+  position: relative;
   color: black;
   font-weight: 400;
+}
+.header .container .navbar .nav-menu ul li a:after {
+  content: "";
+  position: absolute;
+  background-color: #3577F0;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+.header .container .navbar .nav-menu ul li a:hover::after {
+  width: 100%;
+}
+.header .container .navbar .nav-menu ul li a:hover {
+  font-weight: 500;
 }
 .header .container .navbar .nav-stic {
   display: flex;
@@ -65,6 +82,28 @@
   color: #747479;
   font-size: 18px;
   font-weight: 100;
+  position: relative;
+  z-index: 0;
+}
+.header .container .navbar .nav-stic ul li a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  width: 0px;
+  height: 0px;
+  background-color: rgb(255, 73, 124);
+  transition: 0.3s;
+  border-radius: 50%;
+  z-index: -3;
+}
+.header .container .navbar .nav-stic ul li a:hover::after {
+  height: 35px;
+  width: 35px;
+}
+.header .container .navbar .nav-stic ul li a:hover {
+  color: white;
 }
 
 @media screen and (max-width: 600px) {
