@@ -5,5 +5,16 @@
       "password": "k123",
       "id": 1
     }
+  ],
+  "products": [
+    {
+      "name":"Playstation remote control",
+      "firstImg": "https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-01.png",
+      "secondImg": "https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-08.png",
+      "price": 29.99,
+      "quantity": 100,
+      "saled": 30,
+      "discountPercent": 0
+    }
   ]
 }

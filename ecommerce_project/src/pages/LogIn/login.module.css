@@ -12,11 +12,14 @@
 }
 .navbar div {
   width: 50%;
+  min-width: 350px;
 }
 .navRightSide {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  width: 50%;
+  min-width: 350px;
 }
 .navRightSide > a {
   background-color: #ff497c;
@@ -125,6 +128,7 @@
   color: #fff;
   outline: none;
   border-radius: 6px;
+  border: none;
   font-size: 16px;
   line-height: 1.7;
   font-weight: 700;
@@ -161,4 +165,115 @@
 .signIn_forgotpassword_btn :last-child {
   font-size: 14px;
   color: #3577f0;
+}
+
+@media screen and (min-width: 880px) and (max-width: 1090px) {
+  .main_rightSide {
+    margin-left: 50px;
+  }
+  .main_leftSide,
+  .main_rightSide {
+    width: 50%;
+  }
+  .main_leftSide_SignIn{
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 880px) {
+  .main_leftSide {
+    display: none;
+  }
+  .main_leftSide_SignIn {
+    display: none;
+  }
+  .main_rightSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navRightSide {
+    display: flex;
+    align-self: flex-end;
+  }
+  .navRightSide > a {
+    padding: 12px 25px;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin: 40px 30px;
+    padding: 0;
+  }
+  .navbar div,
+  .navRightSide {
+    min-width: 500px;
+  }
+  .main_rightSide_form > form > :first-child {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .navRightSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main_leftSide {
+    display: none;
+  }
+  .main_leftSide_SignIn {
+    display: none;
+  }
+  .main_rightSide_form > form > :first-child {
+    text-align: center;
+  }
+  .main_rightSide {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .main_rightSide_form{
+    margin-top: 200px;
+  }
+  .main{
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar div ,
+  .navRightSide {
+    width: 50%;
+    min-width: 0px;
+    text-align: center;
+  }
+  .navRightSide > {
+    text-align: center;
+  }
+  .navRightSide > a {
+    padding: 12px 25px;
+    font-size: 14px;
+    margin-left: 0;
+  }
+  .navRightSide > p{
+    margin-bottom: 10px;
+  }
+  .navbar> :first-child {
+    margin: 20px  0;
+  }
 }
