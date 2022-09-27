@@ -73,8 +73,8 @@ const Footer = () => {
                   <li><a href="#">685 Market Street,</a> </li>
                   <li><a href="#">Las Vegas, LA 95820,</a> </li>
                   <li> <a href="#">United States.</a> </li>
-                  <li> <i class="fa-regular fa-envelope"></i> <a href="#">example@domain.com</a></li>
-                  <li> <i class="fa-solid fa-phone"></i> <a href="#">(+01) 850-315-5862</a></li>
+                  <li> <i className="fa-regular fa-envelope"></i> <a href="#">example@domain.com</a></li>
+                  <li> <i className="fa-solid fa-phone"></i> <a href="#">(+01) 850-315-5862</a></li>
                 </ul>
               </div>
             </div>
@@ -131,11 +131,11 @@ const Footer = () => {
             <div className="col-4 col-sm-12 col-xs-12">
               <div className="f-social">
                 <ul>
-                  <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                  <li> <a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                  <li> <a href="#"><i class="fa-brands fa-twitter"></i></a> </li>
-                  <li> <a href="#"><i class="fa-brands fa-linkedin"></i></a> </li>
-                  <li> <a href="#"><i class="fa-brands fa-github"></i></a> </li>
+                  <li><a href="#"><i className="fa-brands fa-facebook-f"></i></a></li>
+                  <li> <a href="#"><i className="fa-brands fa-instagram"></i></a></li>
+                  <li> <a href="#"><i className="fa-brands fa-twitter"></i></a> </li>
+                  <li> <a href="#"><i className="fa-brands fa-linkedin"></i></a> </li>
+                  <li> <a href="#"><i className="fa-brands fa-github"></i></a> </li>
                 </ul>
 
               </div>

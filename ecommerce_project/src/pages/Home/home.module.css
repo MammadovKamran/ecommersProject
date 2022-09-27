@@ -1,0 +1,325 @@
+.home .homeLet1 p:nth-child(1) {
+  color: #FF497C;
+  font-size: 14px;
+  font-weight: 600;
+}
+.home .homeLet1 p:nth-child(1) i {
+  color: white;
+  position: relative;
+  z-index: 0;
+  margin-right: 10px;
+}
+.home .homeLet1 p:nth-child(1) i::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  height: 22px;
+  width: 24px;
+  background-color: #FF497C;
+  z-index: -3;
+  border-radius: 50%;
+}
+.home .homeLet1 p:nth-child(2) {
+  font-size: 38px;
+  font-weight: 600;
+  color: #292930;
+}
+.home .homePart1 {
+  padding: 70px;
+  padding-bottom: 0;
+  height: 483px;
+  background-color: #F6F7FB;
+}
+.home .homePart1 .homeHeadphoneL p:nth-child(1) {
+  color: #FF497C;
+  font-size: 14px;
+  font-weight: 600;
+}
+.home .homePart1 .homeHeadphoneL p:nth-child(1) i {
+  color: white;
+  position: relative;
+  z-index: 0;
+  margin-right: 10px;
+}
+.home .homePart1 .homeHeadphoneL p:nth-child(1) i::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  height: 22px;
+  width: 24px;
+  background-color: #FF497C;
+  z-index: -3;
+  border-radius: 50%;
+}
+.home .homePart1 .homeHeadphoneL p:nth-child(2) {
+  font-size: 50px;
+  font-weight: 600;
+  color: #292930;
+}
+.home .homePart1 .homeHeadphoneL button {
+  display: block;
+  width: 177px;
+  height: 59px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  background-color: #3577F0;
+}
+.home .homePart1 .homeHeadphonesimg {
+  width: 100%;
+  height: 100%;
+}
+.home .homePart1 .homeHeadphonesimg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.home .homeChoose {
+  padding: 70px 0px;
+}
+.home .homeChoose .Chooserow {
+  justify-content: center;
+}
+.home .homeChoose p {
+  text-align: center;
+}
+.home .homeChoose p:nth-child(1) {
+  color: #FF497C;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.home .homeChoose p:nth-child(1) i {
+  color: white;
+  position: relative;
+  z-index: 0;
+  margin-right: 10px;
+}
+.home .homeChoose p:nth-child(1) i::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -5px;
+  height: 22px;
+  width: 24px;
+  background-color: #FF497C;
+  z-index: -3;
+  border-radius: 50%;
+}
+.home .homeChoose p:nth-child(2) {
+  font-size: 35px;
+  font-weight: 600;
+  color: #292930;
+  margin-bottom: 30px;
+}
+.home .homeChoose .chooseImg {
+  padding: 25px 0px;
+  margin: 15px 15px;
+  width: 17.4%;
+  border: 1px solid rgba(192, 188, 188, 0.516);
+  text-align: center;
+}
+.home .homeChoose .chooseImg p {
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 20px;
+}
+.home .homevr .col6 {
+  display: flex;
+  position: relative;
+  margin-bottom: 30px;
+}
+.home .homevr .col6 .vr1i {
+  overflow: hidden;
+  border-radius: 5px;
+}
+.home .homevr .col6 .vr1i img {
+  width: 111.5%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.5s;
+}
+.home .homevr .col6 .vr1l p {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.home .homevr .col6 .vr1l p:nth-child(2) {
+  top: 30%;
+}
+.home .homevr .col6 .vr1l a {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  color: rgba(128, 128, 128, 0.629);
+  font-size: 15px;
+  font-weight: 600;
+  transition: 1s;
+}
+.home .homevr .col6 .vr1l a i {
+  margin-left: 10px;
+}
+.home .homevr .col6 .vr2l p {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+}
+.home .homevr .col6 .vr2l p:nth-child(2) {
+  bottom: 30%;
+}
+.home .homevr .col6 .vr2l a {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  color: rgba(239, 227, 227, 0.629);
+  font-size: 15px;
+  font-weight: 600;
+  transition: 1s;
+}
+.home .homevr .col6 .vr2l a i {
+  margin-left: 10px;
+}
+.home .homevr .col6:hover img {
+  transform: scale(1.1);
+  border-radius: 5px;
+}
+.home .homevr .col6:hover a {
+  color: white;
+}
+.home .hsubs {
+  position: relative;
+}
+.home .hsubs img {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home .hsubs .hsubsl {
+  position: absolute;
+  top: 20%;
+  left: 100px;
+}
+.home .hsubs .hsubsl p:nth-child(1) {
+  color: #3577F0;
+  font-weight: 600;
+  font-size: 15px;
+}
+.home .hsubs .hsubsl p:nth-child(1) i {
+  color: white;
+  position: relative;
+  z-index: 0;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+.home .hsubs .hsubsl p:nth-child(1) i::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -4.5px;
+  height: 24px;
+  width: 25px;
+  background-color: #3577F0;
+  z-index: -3;
+  border-radius: 50%;
+}
+.home .hsubs .hsubsl p:nth-child(2) {
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.home .hsubs .hsubsl button {
+  color: white;
+  background-color: #292930;
+  height: 60px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 665px) {
+  .home .homeLet1 p:nth-child(2) {
+    font-size: 25px;
+  }
+  .home .homePart1 .homeHeadphoneL p {
+    text-align: center;
+  }
+  .home .homePart1 .homeHeadphoneL p:nth-child(2) {
+    font-size: 25px;
+    margin-top: 25px;
+  }
+  .home .homePart1 .homeHeadphoneL button {
+    margin: 0 auto;
+  }
+  .home .homeChoose {
+    margin-top: 135px;
+  }
+  .home .homeChoose .Chooserow .chooseImg {
+    width: 90%;
+  }
+  .home .homevr .col6 .vr1l p {
+    font-size: 23px;
+  }
+  .home .homevr .col6 .vr2l p {
+    font-size: 23px;
+  }
+  .home .hsubs {
+    height: 300px;
+  }
+  .home .hsubs .hsubsl {
+    left: 25px;
+  }
+  .home .hsubs .hsubsl p:nth-child(2) {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+  .home .hsubs .hsubsl button {
+    height: 41px;
+    width: 113px;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 665px) and (max-width: 992px) {
+  .home .homePart1 .homeHeadphoneL p {
+    text-align: center;
+  }
+  .home .homePart1 .homeHeadphoneL button {
+    margin: 0 auto;
+  }
+  .home .homeChoose {
+    margin-top: 530px;
+  }
+  .home .homeChoose .chooseImg {
+    width: 24.4%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .home .homePart1 .homeHeadphoneL p:nth-child(2) {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .home .homePart1 {
+    margin-top: 150px;
+  }
+  .home .homePart1 .homeHeadphonesimg img {
+    position: relative;
+    top: -200px;
+  }
+}/*# sourceMappingURL=home.module.css.map */
