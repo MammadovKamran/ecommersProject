@@ -4,10 +4,14 @@ import "swiper/css";
 import "swiper/css/pagination";
 import './SlayderStyle.css'
 import { Pagination } from "swiper";
+import {  useSelector } from "react-redux"
+
 
 function Slayder() {
 
-
+    const {category } = useSelector(state => state.category)
+    console.log(category);
+    
     return (
         <>
             <Swiper
@@ -18,6 +22,7 @@ function Slayder() {
                 className="mySwiper"
             >
                 <SwiperSlide>
+                    
                     
                 </SwiperSlide>
           
