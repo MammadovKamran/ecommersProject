@@ -85,6 +85,12 @@
   position: relative;
   z-index: 0;
 }
+.header .container .navbar .nav-stic ul li a i {
+  color: #747479;
+}
+.header .container .navbar .nav-stic ul li a i:hover {
+  color: white;
+}
 .header .container .navbar .nav-stic ul li a::after {
   content: "";
   position: absolute;

@@ -33,7 +33,7 @@ function ScrollToTop() {
     return (
         <div>
             {
-                showScrollButton && <a href="#" className='top' ><i class="fa-solid fa-arrow-up"></i></a>
+                showScrollButton && <a href="#" className='top' ><i className="fa-solid fa-arrow-up"></i></a>
             }
 
         </div>
