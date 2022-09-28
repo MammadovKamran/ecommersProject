@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import c from "./home.module.scss"
 import "../../../src/App.css"
 import Slayder from './Swiper/Slayder'
@@ -11,11 +11,31 @@ import choose5 from "../../assets/image/choose5.png"
 import vr1 from "../../assets/image/vr1.png"
 import vr2 from "../../assets/image/vr2.png"
 import hwatch from "../../assets/image/h-watch.jpg"
-
+import Swiper2 from "./Swiper2/Swiper2";
 function Home() {
 
 
+  const [days, setDays] = useState(0);
+  const [hours, setHours] = useState(0);
+  const [minutes, setMinutes] = useState(0);
+  const [seconds, setSeconds] = useState(0);
 
+  const deadline = "October, 5, 2022";
+
+  const getTime = () => {
+    const time = Date.parse(deadline) - Date.now();
+
+    setDays(Math.floor(time / (1000 * 60 * 60 * 24)));
+    setHours(Math.floor((time / (1000 * 60 * 60)) % 24));
+    setMinutes(Math.floor((time / 1000 / 60) % 60));
+    setSeconds(Math.floor((time / 1000) % 60));
+  };
+
+  useEffect(() => {
+    const interval = setInterval(() => getTime(deadline), 1000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <>
@@ -24,36 +44,50 @@ function Home() {
       <div className={c.home}>
         <div className="container">
           <div className={c.homeLet1}>
-            <p> <i class="fa-solid fa-layer-group"></i> Categories</p>
+            <p> <i className="fa-solid fa-layer-group"></i> Categories</p>
             <p>Browse by  Category</p>
           </div>
-          Slider
           <Slayder />
+
+
+
           <div className={c.homePart1}>
             <div className="row">
               <div className="col-6 col-xs-12 col-sm-12">
                 <div className={c.homeHeadphoneL}>
-                  <p><i class="fa-solid fa-headphones"></i>Don’t Miss!!</p>
+                  <p><i className="fa-solid fa-headphones"></i>Don’t Miss!!</p>
                   <p>Enhance Your <br /> Music Experience</p>
-                  timer
+                  <div className={c.homeTimer}>
+                    <ul>
+                      <li>{days}</li>
+                      <li>{hours}</li>
+                      <li>{minutes}</li>
+                      <li>{seconds}</li>
+                    </ul>
+                  </div>
                   <button>Check iy Out</button>
                 </div>
               </div>
-              <div className="col-6 col-xs-12 col-sm-12">
+              <div className={`${c.imgcol6} col-6 col-xs-12 col-sm-12`}>
                 <div className={c.homeHeadphonesimg}>
                   <img src={headPhones} alt="" />
+                  <div className={c.homeanima}>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                  </div>
                 </div>
               </div>
             </div>
 
           </div>
 
-          <div className={c.homeFeedback}>
 
-          </div>
 
           <div className={c.homeChoose}>
-            <p> <i class="fa-regular fa-thumbs-up"></i> Why Us</p>
+            <p> <i className="fa-regular fa-thumbs-up"></i> Why Us</p>
             <p>Why People Choose Us</p>
             <div className={`${c.Chooserow} row`}>
               <div className={c.chooseImg}>
@@ -88,7 +122,7 @@ function Home() {
                 <div className={c.vr1l}>
                   <p>Rich sound </p>
                   <p>for less.</p>
-                  <a href="#">Collections <i class="fa-solid fa-arrow-right"></i> </a>
+                  <a href="#">Collections <i className="fa-solid fa-arrow-right"></i> </a>
                 </div>
               </div>
               <div className={`${c.col6} col-6 col-xs-12 col-sm-12`}>
@@ -108,13 +142,25 @@ function Home() {
           <div className={c.hsubs}>
             <img src={hwatch} alt="" />
             <div className={c.hsubsl}>
-              <p> <i class="fa-solid fa-envelope"></i> Newsletter</p>
+              <p> <i className="fa-solid fa-envelope"></i> Newsletter</p>
               <p>Get weekly update</p>
               <button href="#">Subscribe</button>
             </div>
           </div>
 
+
         </div>
+
+        <div className={c.homeFeedback}>
+          <div className="container">
+            <p><i><i class="fa-solid fa-quote-left"></i></i>Testimonials</p>
+            <p>Users Feedback</p>
+            <Swiper2 />
+          </div>
+
+        </div>
+
+
 
 
 

@@ -38,10 +38,10 @@ function Header() {
                         </div>
                         <div className="nav-stic">
                             <ul>
-                                <li><Link to={"#"}><i className="fa-solid fa-magnifying-glass"></i></Link></li>
-                                <li><Link to={"#"}><i className="fa-regular fa-heart"></i></Link></li>
-                                <li><Link to={"#"}><i className="fa-solid fa-cart-plus"></i></Link></li>
-                                <li><Link to={"№"}><i className="fa-regular fa-user"></i></Link></li>
+                                <li><Link to="/"><i className="fa-solid fa-magnifying-glass"></i></Link></li>
+                                <li><Link to="/"><i className="fa-regular fa-heart"></i></Link></li>
+                                <li><Link to="/"><i className="fa-solid fa-cart-plus"></i></Link></li>
+                                <li><Link to="/"><i className="fa-regular fa-user"></i></Link></li>
                             </ul>
                             <div ref={addClass}  onClick={() => changeBars()} className="navBars">
                                 <span></span>

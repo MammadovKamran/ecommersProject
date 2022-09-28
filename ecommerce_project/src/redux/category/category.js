@@ -9,53 +9,55 @@ import pcgaming from "./category-img/swiper-img7.png"
 import monitors from "./category-img/swiper-img5.png"
 import laptops from "./category-img/swiper-img4.png"
 
+
 export const category = createSlice({
     name: "category",
     initialState: {
         category: [
             {
                 id: 1,
-                title: "phones",
+                title: "Phones",
+                // img: "./category-img/swiper-img1.png"
                 img: phone
             },
             {
                 id: 2,
-                title: "compyuter",
+                title: "Compyuter",
                 img: compyuter
             },
             {
                 id: 3,
-                title: "accessories",
+                title: "Accessories",
                 img: accessories
             },
             {
                 id: 4,
-                title: "laptops",
+                title: "Laptops",
                 img: laptops
             },
             {
                 id: 5,
-                title: "monitors",
+                title: "Monitors",
                 img: monitors
             },
             {
                 id: 6,
-                title: "pcgaming",
+                title: "Pc Gaming",
                 img: pcgaming
             },
             {
                 id: 7,
-                title: "smartwatches",
+                title: "Smartwatches",
                 img: smartwatches
             },
             {
                 id: 8,
-                title: "head-phones",
+                title: "Headphones",
                 img: headPhones
             },
             {
                 id: 9,
-                title: "camera",
+                title: "Camera",
                 img: camera
             },
 

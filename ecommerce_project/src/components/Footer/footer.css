@@ -40,6 +40,9 @@
   font-weight: 500;
   margin-bottom: 30px;
 }
+.footer .container .rowf-2 .col-3 .f-letter2 ul li i {
+  color: #8A7877 !important;
+}
 .footer .container .rowf-2 .col-3 .f-letter2 ul li a {
   color: #8A7877;
   position: relative;
@@ -127,6 +130,12 @@
   color: #8A7877;
   position: relative;
   z-index: 0;
+}
+.footer .container .rowf-3 .col-4 .f-social ul li a i {
+  color: #8A7877;
+}
+.footer .container .rowf-3 .col-4 .f-social ul li a i:hover {
+  color: white;
 }
 .footer .container .rowf-3 .col-4 .f-social ul li a::after {
   content: "";
