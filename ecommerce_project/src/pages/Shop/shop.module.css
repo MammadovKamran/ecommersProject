@@ -69,8 +69,8 @@
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
-.shopMain{
-    padding: 80px 0;
+.shopMain {
+  padding: 80px 0;
 }
 .shopProducts {
   display: grid;
@@ -86,7 +86,7 @@
 .shopProducts > div {
   display: flex;
   flex-direction: column;
-  margin-top: 30px ;
+  margin-top: 30px;
 }
 .shopProducts > div > :first-child {
   margin-top: 10px;
@@ -105,3 +105,81 @@
   font-size: 20px;
   color: #292930;
 }
+.content {
+  width: 275px;
+  opacity: -1;
+  position: absolute;
+  bottom: -100px;
+  transition: transform 3s;
+}
+.shopProducts > div:hover .firstImg {
+  width: 101%;
+  height: 101%;
+}
+.shopProducts > div:hover .content {
+  opacity: 1;
+  bottom: 0;
+  left: 0;
+  transform: translate(0, -30px);
+  -webkit-transform: translate(0, -30px);
+  -moz-transform: translate(0, -30px);
+  -ms-transform: translate(0, -30px);
+  -o-transform: translate(0, -30px);
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.productCardHeader {
+  position: relative;
+}
+.content > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content div > button {
+  padding: 10px;
+  border: none;
+}
+.content > div > :nth-child(2) {
+  height: 40px;
+  width: 110px;
+  margin: 10px;
+  display: block;
+  border-radius: 4px;
+  font-size: 14px;
+  color: white;
+  background-color: #ff497c;
+  transition: 0.9s;
+  box-shadow: 0 16px 32px 0 rgb(0 0 0 / 6%);
+  z-index: 1;
+
+}
+.content > div > :nth-child(1),
+.content > div > :nth-child(3) {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: white;
+  display: block;
+  text-align: center;
+  transition: 0.5s;
+  font-size: 14px;
+  color: black;
+  box-shadow: 0 16px 32px 0 rgb(0 0 0 / 6%);
+  z-index: 1;
+}
+
+/* .shopProducts > div .content {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.shopProducts > div{
+  position: relative;
+}
+.shopProducts > div::before{
+  position: absolute;
+} */
