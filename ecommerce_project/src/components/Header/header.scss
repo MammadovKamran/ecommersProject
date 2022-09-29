@@ -48,6 +48,10 @@
 
 
 .header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    
     // z-index: 999;
     // position: sticky;
     // top: 30px;
@@ -176,6 +180,7 @@
                 padding: 0;
 
                 .nav-menu {
+                  
                     display: block;
                     position: absolute;
                     top: 80px;
@@ -188,6 +193,7 @@
                     background-color: white;
 
                     ul {
+                        padding-top: 10px;
                         display: block;
 
                         li {

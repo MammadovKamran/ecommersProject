@@ -31,6 +31,12 @@
   margin-bottom: 14px;
 }
 
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
 .header .container .navbar {
   padding: 0 45px;
   height: 80px;
@@ -129,6 +135,7 @@
     background-color: white;
   }
   .header .container .navbar .nav-menu ul {
+    padding-top: 10px;
     display: block;
   }
   .header .container .navbar .nav-menu ul li:nth-child(n+2) {
