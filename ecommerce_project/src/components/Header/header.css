@@ -31,6 +31,12 @@
   margin-bottom: 14px;
 }
 
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
 .header .container .navbar {
   padding: 0 45px;
   height: 80px;
@@ -38,6 +44,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: white;
+  border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .header .container .navbar .nav-menu ul {
@@ -129,6 +136,7 @@
     background-color: white;
   }
   .header .container .navbar .nav-menu ul {
+    padding-top: 10px;
     display: block;
   }
   .header .container .navbar .nav-menu ul li:nth-child(n+2) {
@@ -136,6 +144,12 @@
   }
   .header .container .navbar .length {
     left: 0%;
+  }
+  .header .container .navbar .nav-stic ul {
+    gap: 17px;
+  }
+  .header .container .navbar .nav-stic ul li a {
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 992px) {

@@ -26,7 +26,7 @@ function Header() {
                         </div>
                         {/* <div className="nav-menu"> */}
                         <div className={`nav-menu ${length ? 'length' : ''}`}>
-                            <ul>
+                            <ul onClick={() => changeBars()} >
                                 <li><Link to="/" >Home</Link></li>
                                 <li><Link to="/shop" >Shop</Link></li>
                                 <li><Link to="/aboutUs" >About</Link></li>
@@ -37,11 +37,12 @@ function Header() {
                             
                         </div>
                         <div className="nav-stic">
-                            <ul>
+                            <ul >
                                 <li><Link to="/"><i className="fa-solid fa-magnifying-glass"></i></Link></li>
-                                <li><Link to="/"><i className="fa-regular fa-heart"></i></Link></li>
+                                <li><Link to="/whishList"><i className="fa-regular fa-heart"></i></Link></li>
                                 <li><Link to="/"><i className="fa-solid fa-cart-plus"></i></Link></li>
                                 <li><Link to="/"><i className="fa-regular fa-user"></i></Link></li>
+                                <li><Link to="/newPage"><i class="fa-solid fa-calendar-plus"></i></Link></li>
                             </ul>
                             <div ref={addClass}  onClick={() => changeBars()} className="navBars">
                                 <span></span>

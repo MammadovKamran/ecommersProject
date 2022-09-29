@@ -17,7 +17,6 @@ export const category = createSlice({
             {
                 id: 1,
                 title: "Phones",
-                // img: "./category-img/swiper-img1.png"
                 img: phone
             },
             {
