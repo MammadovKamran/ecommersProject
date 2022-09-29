@@ -9,6 +9,7 @@ import About from "../pages/About/About";
 import Blog from "../pages/Blog/Blog";
 import ForgotPassword from "../pages/LogIn/ForgotPassword";
 import ResetPassword from "../pages/LogIn/ResetPassword";
+import WhishList from "../pages/WhishList/WhishList";
 
 const Dashboard = () => {
   return (
@@ -23,6 +24,8 @@ const Dashboard = () => {
         <Route path="/signUp" element={<SignUp />} />
         <Route path="/forgotPassword" element={<ForgotPassword />} />
         <Route path="/resetPassword" element={<ResetPassword />} />
+        <Route path="/whishList" element={<WhishList />} />
+
       </Routes>
     </div>
   );
