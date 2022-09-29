@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route , Switch } from "react-router-dom";
 import SignIn from "../pages/LogIn/SignIn";
 import SignUp from "../pages/LogIn/SignUp";
 import Home from "../pages/Home/Home"
@@ -11,10 +11,15 @@ import ForgotPassword from "../pages/LogIn/ForgotPassword";
 import ResetPassword from "../pages/LogIn/ResetPassword";
 import WhishList from "../pages/WhishList/WhishList";
 import Error from "../pages/Error/Error";
+import NewPage from "../pages/newPage/NewPage";
+import ScrollToTop from "../pages/ScroolToTop/ScrollToTop";
+
 
 const Dashboard = () => {
   return (
     <div>
+      
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<Shop />} />
@@ -27,7 +32,7 @@ const Dashboard = () => {
         <Route path="/resetPassword" element={<ResetPassword />} />
         <Route path="/whishList" element={<WhishList />} />
         <Route path="*" element={<Error />} />
-
+        <Route path="/newPage" element={<NewPage/>} />
       </Routes>
     </div>
   );

@@ -145,6 +145,12 @@
   .header .container .navbar .length {
     left: 0%;
   }
+  .header .container .navbar .nav-stic ul {
+    gap: 17px;
+  }
+  .header .container .navbar .nav-stic ul li a {
+    font-size: 16px;
+  }
 }
 @media screen and (min-width: 600px) and (max-width: 992px) {
   .header .container .navbar .nav-menu {
