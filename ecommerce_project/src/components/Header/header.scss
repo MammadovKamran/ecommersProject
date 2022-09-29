@@ -198,9 +198,11 @@
                         padding-top: 10px;
                         display: block;
 
+
                         li {
                             &:nth-child(n+2) {
                                 margin-top: 30px;
+                              
                             }
 
                         }
@@ -210,6 +212,19 @@
                 .length {
                     left: 0%;
                 }
+
+                .nav-stic{
+
+                    ul{
+                        gap: 17px;
+                        li{
+                            a{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+
             }
 
 

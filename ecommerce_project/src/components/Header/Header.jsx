@@ -42,6 +42,7 @@ function Header() {
                                 <li><Link to="/whishList"><i className="fa-regular fa-heart"></i></Link></li>
                                 <li><Link to="/"><i className="fa-solid fa-cart-plus"></i></Link></li>
                                 <li><Link to="/"><i className="fa-regular fa-user"></i></Link></li>
+                                <li><Link to="/newPage"><i class="fa-solid fa-calendar-plus"></i></Link></li>
                             </ul>
                             <div ref={addClass}  onClick={() => changeBars()} className="navBars">
                                 <span></span>
