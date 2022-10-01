@@ -1,8 +1,11 @@
 {
   "users": [
     {
+      "userName": "kamran",
       "email": "kamran@gmail.com",
-      "password": "k123",
+      "password": "Kamran12345!",
+      "card": [],
+      "wishlist": [],
       "id": 1
     }
   ],
@@ -12,12 +15,16 @@
       "name": "Playstation remote control",
       "firstImg": "https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-01.png",
       "secondImg": "https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-08.png",
-      "price": 29.99,
-      "quantity": 100,
+      "price": 129.99,
+      "stock": 100,
       "saled": 30,
       "discountPercent": 0,
       "category": "Playstation",
-      "color": ["red", "white", "blue"]
+      "color": [
+        "red",
+        "white",
+        "blue"
+      ]
     },
     {
       "id": 2,
@@ -25,23 +32,23 @@
       "firstImg": "https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-04.png",
       "secondImg": "https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-05.png",
       "price": 29.99,
-      "quantity": 100,
+      "stock": 100,
       "saled": 30,
       "discountPercent": 0,
       "category": "Sound System",
-      "color": ["red", "white", "blue"]
+      "color": "red"
     },
     {
       "id": 3,
       "name": "RGB keyboard",
       "firstImg": "https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-02.png",
       "secondImg": "https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-02.png",
-      "price": 29.99,
-      "quantity": 100,
+      "price": 729.99,
+      "stock": 100,
       "saled": 30,
       "discountPercent": 0,
       "category": "RGB Keyboard",
-      "color": ["red", "white", "blue"]
+      "color": "blue"
     },
     {
       "id": 4,
@@ -49,24 +56,23 @@
       "firstImg": "https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-06.png",
       "secondImg": "https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-06.png",
       "price": 29.99,
-      "quantity": 100,
+      "stock": 100,
       "saled": 30,
       "discountPercent": 0,
       "category": "Mouse",
-      "color": ["red", "white", "blue"]
+      "color": "white"
     },
-
     {
       "id": 5,
       "name": "Headphone",
       "firstImg": "https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-07.png",
       "secondImg": "https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-07.png",
-      "price": 29.99,
-      "quantity": 100,
+      "price": 1229.99,
+      "stock": 100,
       "saled": 30,
       "discountPercent": 0,
       "category": "Headphone",
-      "color": ["red", "white", "blue"]
+      "color": "blue"
     },
     {
       "id": 6,
@@ -74,11 +80,11 @@
       "firstImg": "https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-03.png",
       "secondImg": "https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-03.png",
       "price": 29.99,
-      "quantity": 100,
+      "stock": 100,
       "saled": 30,
       "discountPercent": 0,
       "category": "Camera",
-      "color": ["red", "white", "blue"]
+      "color": "white"
     }
   ]
 }
