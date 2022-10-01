@@ -59,9 +59,12 @@ function NewPage() {
           <button onClick={() => goto()} >Go to Home</button>
         </div>
 
+
+
       </div>
       <Footer />
     </>
+
   )
 }
 

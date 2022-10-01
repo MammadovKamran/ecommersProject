@@ -1,5 +1,46 @@
 .home {
 
+    .homeSlicei{
+        background-color: #F9F3F0;
+    }
+
+    .homeSlice {
+        margin: 20px 0;
+        position: relative;
+        top: 0;
+        z-index: 8;
+        min-height: 600px;
+        background-color: #F9F3F0;
+        display: flex;
+
+        .homeSlice1{
+            width: 50%;
+            height: 100%;
+        }
+
+        .homeSlice2{
+            width: 50%;
+
+        }
+
+
+        // .homeSlice1 {
+        //     height: 100%;
+        //     border: 1px solid black;
+        // }
+
+        // .homeSlice2 {
+        //     height: 100%;
+        //     border: 1px solid black;
+        //     position: relative;
+        //     overflow: hidden;
+
+
+        // }
+
+
+    }
+
 
     .homeLet1 {
         margin-bottom: 30px;
@@ -630,7 +671,8 @@
                 }
             }
         }
-        .homeFeedback{
+
+        .homeFeedback {
             padding: 0;
         }
     }

@@ -1,3 +1,22 @@
+.home .homeSlicei {
+  background-color: #F9F3F0;
+}
+.home .homeSlice {
+  margin: 20px 0;
+  position: relative;
+  top: 0;
+  z-index: 8;
+  min-height: 600px;
+  background-color: #F9F3F0;
+  display: flex;
+}
+.home .homeSlice .homeSlice1 {
+  width: 50%;
+  height: 100%;
+}
+.home .homeSlice .homeSlice2 {
+  width: 50%;
+}
 .home .homeLet1 {
   margin-bottom: 30px;
 }

@@ -4,11 +4,12 @@
 }
 .new .newImg {
   height: 100vh;
-  width: 30%;
+  width: 35%;
+  overflow: hidden;
 }
 .new .newImg img {
   width: 500px;
-  height: 100vh;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
