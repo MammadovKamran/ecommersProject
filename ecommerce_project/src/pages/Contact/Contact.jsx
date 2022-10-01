@@ -3,6 +3,8 @@ import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import contactstyle from './Contact.module.css';
 import producticon from '../../assets/image/product.png'
+import Header from "../../components/Header/Header"
+import Footer from "../../components/Footer/Footer"
 
 function Contact() {
   const form = useRef()
@@ -69,6 +71,8 @@ function Contact() {
     }
 }
   return (
+    <>
+    <Header/>
     <div className={contactstyle.main}>
         <div className={contactstyle.container}>
             <div className={contactstyle.contact_headline}>
@@ -160,6 +164,8 @@ function Contact() {
             </div>
         </div>
     </div>
+    <Footer/>
+    </>
   )
 }
 
