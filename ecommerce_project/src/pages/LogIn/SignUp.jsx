@@ -4,26 +4,34 @@ import { Form, FormGroup, Input, Button, Label } from "reactstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { addUser, fetchUsers, selectAllUsers } from "../../redux/userSlice/userSlice";
 import { Link, useNavigate } from "react-router-dom";
+import regexObject from './../../regex';
 import logo from "../../assets/image/logo.png";
+import { unwrapResult } from '@reduxjs/toolkit';
 
 const SignUp = () => {
+
   const allUsers = useSelector(selectAllUsers)
   const [userName, setUserName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const { emailDataTester, passwordDataTester } = regexObject;
+
+  const isDisabled = [userName, email, password].every(Boolean)
 
   const handleSubmit = (e) => {
-    if (email === "" && password === "") {
-      alert("Please enter email and password");
-    } else if (allUsers.find((user) => user.email === email)) {
-      alert("User already exists");
+
+    if (isDisabled && emailDataTester(email) && passwordDataTester(password)) {
+      const result = dispatch(addUser({ userName, email, password,card:[],wishlist:[] }))
+      unwrapResult(result)
+      navigate("/signIn");
     } else {
-      dispatch(addUser({ email, password }));
-      alert("User created");
-      navigate("/");
+      alert("Please fill all the fields");
     }
+
+
+
     e.preventDefault();
   };
 
@@ -37,7 +45,7 @@ const SignUp = () => {
         <div className={loginStyle.navbar}>
           <div>
             <Link to="/">
-              
+
               <img src={logo} alt="logo" />
             </Link>
           </div>
@@ -71,7 +79,7 @@ const SignUp = () => {
                   <Label for="examplePassword">Password</Label>
                   <Input type="password" name="password" id="examplePassword" placeholder="password" value={password} onChange={(e) => setPassword(e.target.value)} />
                 </FormGroup>
-                <Button type="submit" className={loginStyle.createAccount}>Create Account</Button>
+                <Button type="submit" disabled={!isDisabled} className={loginStyle.createAccount}>Create Account</Button>
               </Form>
             </div>
           </div>

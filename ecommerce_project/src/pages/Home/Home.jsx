@@ -12,7 +12,12 @@ import vr1 from "../../assets/image/vr1.png"
 import vr2 from "../../assets/image/vr2.png"
 import hwatch from "../../assets/image/h-watch.jpg"
 import Swiper2 from "./Swiper2/Swiper2";
+import Header from './../../components/Header/Header'
+import Footer from './../../components/Footer/Footer'
+
 function Home() {
+
+
 
 
   const [days, setDays] = useState(0);
@@ -40,7 +45,7 @@ function Home() {
   return (
     <>
 
-
+      <Header />
       <div className={c.home}>
         <div className="container">
           <div className={c.homeLet1}>
@@ -153,7 +158,7 @@ function Home() {
 
         <div className={c.homeFeedback}>
           <div className="container">
-            <p><i><i class="fa-solid fa-quote-left"></i></i>Testimonials</p>
+            <p><i><i className="fa-solid fa-quote-left"></i></i>Testimonials</p>
             <p>Users Feedback</p>
             <Swiper2 />
           </div>
@@ -167,7 +172,7 @@ function Home() {
 
 
       </div>
-
+      <Footer />
     </>
   )
 }

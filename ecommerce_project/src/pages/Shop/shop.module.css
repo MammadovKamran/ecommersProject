@@ -109,7 +109,7 @@
   width: 275px;
   opacity: -1;
   position: absolute;
-  bottom: -100px;
+  bottom: -30px;
   transition: transform 3s;
 }
 .shopProducts > div:hover .firstImg {
