@@ -12,6 +12,8 @@ import vr1 from "../../assets/image/vr1.png"
 import vr2 from "../../assets/image/vr2.png"
 import hwatch from "../../assets/image/h-watch.jpg"
 import Swiper2 from "./Swiper2/Swiper2";
+import Sliceslide2 from "./Slice-slides/Slice-slide2/Sliceslide2"
+import Sliceslide1 from "./Slice-slides/Slice-slide1/Sliceslide1"
 function Home() {
 
 
@@ -42,14 +44,27 @@ function Home() {
 
 
       <div className={c.home}>
+        <div className={c.homeSlicei}>
+          <div className="container">
+            <div className={c.homeSlice}>
+              <div className={c.homeSlice1}>
+                <Sliceslide1 />
+              </div>
+              <div className={c.homeSlice2}>
+                <Sliceslide2 />
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="container">
           <div className={c.homeLet1}>
             <p> <i className="fa-solid fa-layer-group"></i> Categories</p>
             <p>Browse by  Category</p>
           </div>
+
+
           <Slayder />
-
-
 
           <div className={c.homePart1}>
             <div className="row">
@@ -153,19 +168,12 @@ function Home() {
 
         <div className={c.homeFeedback}>
           <div className="container">
-            <p><i><i class="fa-solid fa-quote-left"></i></i>Testimonials</p>
+            <p><i><i className="fa-solid fa-quote-left"></i></i>Testimonials</p>
             <p>Users Feedback</p>
             <Swiper2 />
           </div>
 
         </div>
-
-
-
-
-
-
-
       </div>
 
     </>

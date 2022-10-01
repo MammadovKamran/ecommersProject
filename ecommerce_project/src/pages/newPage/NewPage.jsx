@@ -37,6 +37,8 @@ function NewPage() {
 
   return (
 
+  
+
     <div className={n.new}>
       <div className={n.newImg}>
         <img src={newPageimg} alt="" />
@@ -46,7 +48,6 @@ function NewPage() {
         <p>Our new website is on the way</p>
         <p>We're coming soon! We're working hard to give you <br />
           the best experince.</p>
-
         <ul>
           <li>{days}</li>
           <li>{hours}</li>
@@ -55,7 +56,6 @@ function NewPage() {
         </ul>
         <button onClick={() => goto()} >Go to Home</button>
       </div>
-
     </div>
 
 
