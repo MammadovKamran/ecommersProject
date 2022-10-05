@@ -1,9 +1,4 @@
-import {
-  createSlice,
-  createAsyncThunk,
-  createEntityAdapter,
-  createDraftSafeSelector,
-} from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk, createEntityAdapter, createDraftSafeSelector } from "@reduxjs/toolkit";
 
 const userAdapter = createEntityAdapter({
   selectId: (user) => user.id,
@@ -34,23 +29,23 @@ export const addUser = createAsyncThunk("user/addUser", async (user) => {
   }
 });
 
-export const updateUser = createAsyncThunk(
-  "user/updateUser",
-  async ({ id, user }) => {
-    try {
-      const response = await fetch(`http://localhost:3000/users/${id}`, {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(user),
-      });
-      return await response.json();
-    } catch (error) {
-      throw new error(error);
-    }
+
+
+
+export const updateUser = createAsyncThunk("user/updateUser", async ({ id, user }) => {
+  try {
+    const response = await fetch(`http://localhost:3000/users/${id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(user),
+    });
+    return await response.json();
+  } catch (error) {
+    throw new error(error);
   }
-);
+});
 
 const userSlice = createSlice({
   name: "user",
@@ -64,10 +59,8 @@ const userSlice = createSlice({
       state.selectedUser = action.payload;
     },
     updateSelectedUserWishlist: (state, action) => {
-      const { id, name, firstImg, price, category,stock } = action.payload;
-      const findedProduct = state.selectedUser.wishlist.find(
-        (item) => item.id === id
-      );
+      const { id, name, firstImg, price, category, stock } = action.payload;
+      const findedProduct = state.selectedUser.wishlist.find((item) => item.id === id);
       if (!findedProduct) {
         state.selectedUser.wishlist.push({
           id,
@@ -80,19 +73,15 @@ const userSlice = createSlice({
       }
     },
     deleteSelectedUserWishlist: (state, action) => {
-      const { id, name, firstImg, price, category,stock } = action.payload;
-      const findedProduct = state.selectedUser.wishlist.find(
-        (item) => item.id === id
-      );
+      const { id, name, firstImg, price, category, stock } = action.payload;
+      const findedProduct = state.selectedUser.wishlist.find((item) => item.id === id);
       if (findedProduct) {
-        state.selectedUser.wishlist.splice( state.selectedUser.wishlist.indexOf(findedProduct), 1 );
-    }}
-    ,
+        state.selectedUser.wishlist.splice(state.selectedUser.wishlist.indexOf(findedProduct), 1);
+      }
+    },
     updateSelectedUserCard: (state, action) => {
       const { id, name, firstImg, price, category } = action.payload;
-      const findedProduct = state.selectedUser.card.find(
-        (item) => item.id === id
-      );
+      const findedProduct = state.selectedUser.card.find((item) => item.id === id);
       if (!findedProduct) {
         state.selectedUser.card.push({
           id,
@@ -107,6 +96,7 @@ const userSlice = createSlice({
           item.id === id ? { ...item, quantity: item.quantity + 1 } : item
         );
       }
+ 
     },
   },
   extraReducers: {
@@ -154,11 +144,7 @@ export const {
   selectById: selectUserById,
 } = userAdapter.getSelectors((state) => state.user);
 
-export const {
-  addSelectedUser,
-  updateSelectedUserWishlist,
-  deleteSelectedUserWishlist,
-  updateSelectedUserCard,
-} = userSlice.actions;
+export const { addSelectedUser, updateSelectedUserWishlist, deleteSelectedUserWishlist, updateSelectedUserCard } =
+  userSlice.actions;
 
 export default userSlice.reducer;

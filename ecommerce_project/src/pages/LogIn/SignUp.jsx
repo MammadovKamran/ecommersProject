@@ -4,13 +4,12 @@ import { Form, FormGroup, Input, Button, Label } from "reactstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { addUser, fetchUsers, selectAllUsers } from "../../redux/userSlice/userSlice";
 import { Link, useNavigate } from "react-router-dom";
-import regexObject from './../../regex';
+import regexObject from "./../../regex";
 import logo from "../../assets/image/logo.png";
-import { unwrapResult } from '@reduxjs/toolkit';
+import { unwrapResult } from "@reduxjs/toolkit";
 
 const SignUp = () => {
-
-  const allUsers = useSelector(selectAllUsers)
+  const allUsers = useSelector(selectAllUsers);
   const [userName, setUserName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -18,19 +17,16 @@ const SignUp = () => {
   const navigate = useNavigate();
   const { emailDataTester, passwordDataTester } = regexObject;
 
-  const isDisabled = [userName, email, password].every(Boolean)
+  const isDisabled = [userName, email, password].every(Boolean);
 
   const handleSubmit = (e) => {
-
     if (isDisabled && emailDataTester(email) && passwordDataTester(password)) {
-      const result = dispatch(addUser({ userName, email, password,card:[],wishlist:[] }))
-      unwrapResult(result)
+      const result = dispatch(addUser({ userName, email, password, card: [], wishlist: [] }));
+      unwrapResult(result);
       navigate("/signIn");
     } else {
       alert("Please fill all the fields");
     }
-
-
 
     e.preventDefault();
   };
@@ -45,7 +41,6 @@ const SignUp = () => {
         <div className={loginStyle.navbar}>
           <div>
             <Link to="/">
-
               <img src={logo} alt="logo" />
             </Link>
           </div>
@@ -69,17 +64,40 @@ const SignUp = () => {
                 </FormGroup>
                 <FormGroup>
                   <Label for="exampleUserName">User Name</Label>
-                  <Input type="text" name="userName" id="userName" placeholder="anniemario" value={userName} onChange={(e) => setUserName(e.target.value)} />
+                  <Input
+                    type="text"
+                    name="userName"
+                    id="userName"
+                    placeholder="anniemario"
+                    value={userName}
+                    onChange={(e) => setUserName(e.target.value)}
+                  />
                 </FormGroup>
                 <FormGroup>
                   <Label for="exampleEmail">Email</Label>
-                  <Input type="email" name="email" id="exampleEmail" placeholder="annie@example.com" value={email} onChange={(e) => setEmail(e.target.value)} />
+                  <Input
+                    type="email"
+                    name="email"
+                    id="exampleEmail"
+                    placeholder="annie@example.com"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
                 </FormGroup>
                 <FormGroup>
                   <Label for="examplePassword">Password</Label>
-                  <Input type="password" name="password" id="examplePassword" placeholder="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+                  <Input
+                    type="password"
+                    name="password"
+                    id="examplePassword"
+                    placeholder="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                  />
                 </FormGroup>
-                <Button type="submit" disabled={!isDisabled} className={loginStyle.createAccount}>Create Account</Button>
+                <Button type="submit" disabled={!isDisabled} className={loginStyle.createAccount}>
+                  Create Account
+                </Button>
               </Form>
             </div>
           </div>

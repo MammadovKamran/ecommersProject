@@ -4,35 +4,34 @@ import { Link } from "react-router-dom";
 import { AiOutlineHeart } from "react-icons/ai";
 import { FaRegEye } from "react-icons/fa";
 import { useSelector, useDispatch } from "react-redux";
-import { updateSelectedUserWishlist, updateSelectedUserCard, selectSelectedUser } from './../../redux/userSlice/userSlice';
+import {
+  updateSelectedUserWishlist,
+  updateSelectedUserCard,
+  selectSelectedUser,
+  updateUser,
+} from "./../../redux/userSlice/userSlice";
 
-
-const Product = (props) => {
-
-
-  const selectedUser = useSelector(state => state.user.selectedUser);
+const Product = ({ product }) => {
+  const selectedUser = useSelector((state) => state.user.selectedUser);
   const dispatch = useDispatch();
-  const { product } = props;
-
 
   const handleWishList = () => {
-
     if (selectedUser) {
-      dispatch(updateSelectedUserWishlist(product))
+      dispatch(updateSelectedUserWishlist(product));
+      dispatch(updateUser({ id: selectedUser.id, user: selectedUser }));
     } else {
       alert("Please Login First");
     }
-
-  }
-
+  };
 
   const handleAddToCart = () => {
     if (selectedUser) {
       dispatch(updateSelectedUserCard(product));
+      dispatch(updateUser({ id: selectedUser.id, user: selectedUser }));
     } else {
       alert("Please Login First");
     }
-  }
+  };
 
   return (
     <div>
