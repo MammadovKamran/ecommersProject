@@ -3,8 +3,6 @@ import n from "./newPage.module.scss"
 import newPageimg from "../../assets/image/new-pageImg.jpg"
 import logoLarge from "../../assets/image/logo-large.png"
 import { useNavigate } from "react-router-dom"
-import Header from '../../components/Header/Header'
-import Footer from '../../components/Footer/Footer'
 
 function NewPage() {
 
@@ -38,32 +36,28 @@ function NewPage() {
 
 
   return (
-    <>
-      <Header />
-      <div className={n.new}>
-        <div className={n.newImg}>
-          <img src={newPageimg} alt="" />
-        </div>
-        <div className={n.newLetter}>
-          <img src={logoLarge} alt="" />
-          <p>Our new website is on the way</p>
-          <p>We're coming soon! We're working hard to give you <br />
-            the best experince.</p>
 
-          <ul>
-            <li>{days}</li>
-            <li>{hours}</li>
-            <li>{minutes}</li>
-            <li>{seconds}</li>
-          </ul>
-          <button onClick={() => goto()} >Go to Home</button>
-        </div>
+  
 
-
-
+    <div className={n.new}>
+      <div className={n.newImg}>
+        <img src={newPageimg} alt="" />
       </div>
-      <Footer />
-    </>
+      <div className={n.newLetter}>
+        <img src={logoLarge} alt="" />
+        <p>Our new website is on the way</p>
+        <p>We're coming soon! We're working hard to give you <br />
+          the best experince.</p>
+        <ul>
+          <li>{days}</li>
+          <li>{hours}</li>
+          <li>{minutes}</li>
+          <li>{seconds}</li>
+        </ul>
+        <button onClick={() => goto()} >Go to Home</button>
+      </div>
+    </div>
+
 
   )
 }

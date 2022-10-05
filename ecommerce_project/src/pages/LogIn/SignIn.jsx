@@ -2,12 +2,9 @@ import React, { useState, useEffect } from "react";
 import loginStyle from "./login.module.css";
 import { Form, FormGroup, Input, Button, Label } from "reactstrap";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchUsers, selectAllUsers, addSelectedUser } from "./../../redux/userSlice/userSlice";
+import {  fetchUsers, selectAllUsers } from "../../redux/userSlice/userSlice";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../../assets/image/logo.png";
-import regexObject from './../../regex';
-import { unwrapResult } from '@reduxjs/toolkit';
-import { useRef } from "react";
 
 const SignIn = () => {
   const allUsers = useSelector(selectAllUsers);
@@ -15,27 +12,17 @@ const SignIn = () => {
   const [password, setPassword] = useState("");
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const isDisabled = [email, password].every(Boolean);
-  const { emailDataTester, passwordDataTester } = regexObject;
-
 
   const handleSubmit = (e) => {
-
-    if (isDisabled && emailDataTester(email) && passwordDataTester(password)) {
-      const result = dispatch(fetchUsers());
-      unwrapResult(result);
-      const user = allUsers.find((user) => user.email === email && user.password === password);
-      if (user) {
-        dispatch(addSelectedUser(user));
-        navigate('/home');
-
-      }
+    if (email === "" && password === "") {
+      alert("Please enter email and password");
+    } else if (allUsers.find((user) => user.email === email && user.password === password)) {
+      alert("succesfull");
+      navigate("/");
     } else {
-      alert("Invalid Credentials");
+      alert("wrong email or password");
     }
-
     e.preventDefault();
-
   };
 
   useEffect(() => {
@@ -77,7 +64,7 @@ const SignIn = () => {
                   <Input type="password" name="password" id="examplePassword" placeholder="password" value={password} onChange={(e) => setPassword(e.target.value)} />
                 </FormGroup>
                 <FormGroup className={loginStyle.signIn_forgotpassword_btn}>
-                  <Button type="submit" disabled={!isDisabled} className={loginStyle.createAccount}>
+                  <Button type="submit" className={loginStyle.createAccount}>
                     Sign In
                   </Button>
                   <Link to="">Forget Password?</Link>
