@@ -28,7 +28,7 @@ function Header() {
             <div className={`nav-menu ${length ? "length" : ""}`}>
               <ul onClick={() => changeBars()}>
                 <li>
-                  <Link to="/">Home</Link>
+                  <Link to="/home">Home</Link>
                 </li>
                 <li>
                   <Link to="/shop">Shop</Link>
