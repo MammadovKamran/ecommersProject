@@ -12,7 +12,7 @@ function Contact() {
   const sendEmail = (e) => {
       e.preventDefault();
 
-      emailjs.sendForm('service_ayttpzm', 'template_bqon14f', form.current, 'o6MnA2Wu3g8ICCXmq')
+      emailjs.sendForm('service_ftgy5d7', 'template_dd1uvxj', form.current, 'K6Nc_lBbmaZb9YTZq')
         .then((result) => {
             console.log(result.text);
         }, (error) => {
@@ -45,6 +45,10 @@ function Contact() {
   const Inpmessageval = (e) => {
     setMessageinput(e.target.value);
   }
+  function messageerror() {
+    alert('Email has been sent successfully');
+  }
+
   const Clickme =()=>{
     if(nameinput == '' || (nameinput == '' && (phoneinput == '' || emailinput == '' || messageinput == ''))){
         setErrormsg('* Name can not be empty!')
@@ -68,7 +72,9 @@ function Contact() {
         setPhoneinput('');
         setEmailinput('');
         setMessageinput('');
+        setTimeout(messageerror, 2000);
     }
+
 }
   return (
     <>
@@ -97,27 +103,27 @@ function Contact() {
                 <h3>We would love to hear from you.</h3>
                 <p>If you’ve got great products your making or looking to work with us then drop us a line.</p>
               
-                <form ref={form} onSubmit={sendEmail} className={contactstyle.form} method="POST" action=''>
+                <form ref={form} onSubmit={sendEmail} className={contactstyle.form}>
                   <div className={contactstyle.name_phone_mail_div}>
                   
                     <div className={contactstyle.form_name}>
                       <div className={contactstyle.name1}>
                         <label>Name <span>*</span></label>
-                        <input className={contactstyle.inp} type='text' name='contactname' value={nameinput} onChange={Inpnameval}/>
+                        <input className={contactstyle.inp} type='text' name='user_name' value={nameinput} onChange={Inpnameval}/>
                       </div>
                     </div>
 
                     <div className={contactstyle.form_phone}>
                       <div className={contactstyle.phone1}>
                         <label>Phone <span>*</span></label>
-                        <input className={contactstyle.inp} type='tel' name='contactphone' value={phoneinput} onChange={Inpphoneval}/>
+                        <input className={contactstyle.inp} type='tel' name='user_phone' value={phoneinput} onChange={Inpphoneval}/>
                       </div>
                     </div>
 
                     <div className={contactstyle.form_mail}>
                       <div className={contactstyle.mail1}>
                         <label>Email <span>*</span></label>
-                        <input className={contactstyle.inp} type='email' name='contactemail' value={emailinput} onChange={Inpemailval}/>
+                        <input className={contactstyle.inp} type='email' name='user_email' value={emailinput} onChange={Inpemailval}/>
                       </div>
                     </div>
                   </div>
@@ -125,7 +131,7 @@ function Contact() {
                   <div className={contactstyle.textarea_div}>
                     <div className={contactstyle.form_textarea}>
                       <label>Your message</label>
-                      <textarea className={contactstyle.inp} name='contactmessage' value={messageinput} onChange={Inpmessageval}></textarea>
+                      <textarea className={contactstyle.inp} name='message' value={messageinput} onChange={Inpmessageval}></textarea>
                     </div>
                   </div>
 
