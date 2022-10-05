@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import w from "./whishList.module.scss";
+import w from "./../WhishList/whishList.module.scss";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import { useSelector, useDispatch } from "react-redux";
 import { updateSelectedUserCard, deleteSelectedUserWishlist } from "./../../redux/userSlice/userSlice";
 
-function WhishList() {
+function Card() {
   const selectedUser = useSelector((state) => state.user.selectedUser);
 
-  const [wishList, setWishList] = useState(selectedUser.wishlist);
+  const [card, setcard] = useState(selectedUser.card);
 
   const dispatch = useDispatch();
 
@@ -26,7 +26,6 @@ function WhishList() {
       alert("Please Login First");
     }
   };
-
   return (
     <>
       <Header />
@@ -54,7 +53,7 @@ function WhishList() {
             </div>
           </div>
 
-          {wishList.map((item) => (
+          {card.map((item) => (
             <div className={`${w.whishR} .row`}>
               <div className="col-1">
                 <button className={w.x} onClick={() => handleDeleteWishlist(item)}>
@@ -90,7 +89,7 @@ function WhishList() {
 
           {/* // Mobile versiya */}
 
-          {wishList.map((item) => {
+          {card.map((item) => {
             return (
               <div className={`${w.whishMr1} row`}>
                 <div className="col-3">
@@ -130,4 +129,4 @@ function WhishList() {
   );
 }
 
-export default WhishList;
+export default Card;
