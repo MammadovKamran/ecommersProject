@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import c from "./home.module.scss"
 import "../../../src/App.css"
 import Slayder from './Swiper/Slayder'
@@ -14,7 +14,13 @@ import hwatch from "../../assets/image/h-watch.jpg"
 import Swiper2 from "./Swiper2/Swiper2";
 import Sliceslide2 from "./Slice-slides/Slice-slide2/Sliceslide2"
 import Sliceslide1 from "./Slice-slides/Slice-slide1/Sliceslide1"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 function Home() {
+
+  const inputValue = useRef()
 
 
   const [days, setDays] = useState(0);
@@ -39,10 +45,41 @@ function Home() {
     return () => clearInterval(interval);
   }, []);
 
+
+  const notify = (e) => {
+    e.preventDefault()
+
+    if(inputValue.current.value.length == 0){
+      toast.error('Please write the email!', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        });
+    }
+    else{
+
+      toast.success(' you will get the weekly update!', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });;
+    }
+
+
+    inputValue.current.value = ""
+
+  }
+
   return (
     <>
-
-
       <div className={c.home}>
         <div className={c.homeSlicei}>
           <div className="container">
@@ -56,14 +93,11 @@ function Home() {
             </div>
           </div>
         </div>
-
         <div className="container">
           <div className={c.homeLet1}>
             <p> <i className="fa-solid fa-layer-group"></i> Categories</p>
             <p>Browse by  Category</p>
           </div>
-
-
           <Slayder />
 
           <div className={c.homePart1}>
@@ -98,9 +132,6 @@ function Home() {
             </div>
 
           </div>
-
-
-
           <div className={c.homeChoose}>
             <p> <i className="fa-regular fa-thumbs-up"></i> Why Us</p>
             <p>Why People Choose Us</p>
@@ -160,11 +191,29 @@ function Home() {
               <p> <i className="fa-solid fa-envelope"></i> Newsletter</p>
               <p>Get weekly update</p>
               <div className={c.hsubsemail}>
-                <div className={c.hsubicon}>
-                <i class="fa-solid fa-envelope"></i>
-                <input type="text" placeholder="example@gmail.com" />
-                <button href="#">Subscribe</button>
-                </div>
+                <i className="fa-solid fa-envelope"></i>
+                <form onSubmit={(e) => notify(e)} id="banner-message">
+                  <input
+                    ref={inputValue}
+                    type="email"
+                    id="inputEmail"
+                    placeholder="email"
+                    required=""
+                    autoFocus=""
+                    onInvalid="this.setCustomValidity('Not Valid')" onInput="setCustomValidity('')"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" />
+                  <button className={c.subslbutton}   >Subscribe</button>
+                </form>
+                <ToastContainer position="top-center"
+                  autoClose={5000}
+                  hideProgressBar={false}
+                  newestOnTop={false}
+                  closeOnClick
+                  rtl={false}
+                  pauseOnFocusLoss
+                  draggable
+                  pauseOnHover />
+
               </div>
             </div>
           </div>
