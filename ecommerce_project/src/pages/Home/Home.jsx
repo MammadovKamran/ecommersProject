@@ -22,7 +22,7 @@ function Home() {
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
 
-  const deadline = "October, 5, 2022";
+  const deadline = "October, 25, 2022";
 
   const getTime = () => {
     const time = Date.parse(deadline) - Date.now();
@@ -159,7 +159,13 @@ function Home() {
             <div className={c.hsubsl}>
               <p> <i className="fa-solid fa-envelope"></i> Newsletter</p>
               <p>Get weekly update</p>
-              <button href="#">Subscribe</button>
+              <div className={c.hsubsemail}>
+                <div className={c.hsubicon}>
+                <i class="fa-solid fa-envelope"></i>
+                <input type="text" placeholder="example@gmail.com" />
+                <button href="#">Subscribe</button>
+                </div>
+              </div>
             </div>
           </div>
 
