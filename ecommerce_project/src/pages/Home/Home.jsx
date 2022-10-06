@@ -12,17 +12,9 @@ import vr1 from "../../assets/image/vr1.png"
 import vr2 from "../../assets/image/vr2.png"
 import hwatch from "../../assets/image/h-watch.jpg"
 import Swiper2 from "./Swiper2/Swiper2";
-
 import Sliceslide2 from "./Slice-slides/Slice-slide2/Sliceslide2"
 import Sliceslide1 from "./Slice-slides/Slice-slide1/Sliceslide1"
-
-import Header from './../../components/Header/Header'
-import Footer from './../../components/Footer/Footer'
-
-
 function Home() {
-
-
 
 
   const [days, setDays] = useState(0);
@@ -30,7 +22,7 @@ function Home() {
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
 
-  const deadline = "October, 5, 2022";
+  const deadline = "October, 25, 2022";
 
   const getTime = () => {
     const time = Date.parse(deadline) - Date.now();
@@ -50,7 +42,7 @@ function Home() {
   return (
     <>
 
-      <Header />
+
       <div className={c.home}>
         <div className={c.homeSlicei}>
           <div className="container">
@@ -167,7 +159,13 @@ function Home() {
             <div className={c.hsubsl}>
               <p> <i className="fa-solid fa-envelope"></i> Newsletter</p>
               <p>Get weekly update</p>
-              <button href="#">Subscribe</button>
+              <div className={c.hsubsemail}>
+                <div className={c.hsubicon}>
+                <i class="fa-solid fa-envelope"></i>
+                <input type="text" placeholder="example@gmail.com" />
+                <button href="#">Subscribe</button>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -183,7 +181,7 @@ function Home() {
 
         </div>
       </div>
-      <Footer />
+
     </>
   )
 }
