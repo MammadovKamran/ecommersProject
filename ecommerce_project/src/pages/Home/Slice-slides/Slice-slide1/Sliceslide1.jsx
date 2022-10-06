@@ -29,22 +29,22 @@ function Sliceslide1() {
 
       <SwiperSlide>
         <div className="slick1">
-          <p><i class="fa-solid fa-fire-flame-curved"></i>Hot Deal In This Week</p>
+          <p><i className="fa-solid fa-fire-flame-curved"></i>Hot Deal In This Week</p>
           <p>Smart Digital <br /> Watch</p>
           <div className="slick1img">
 
-            <button> <i class="fa-solid fa-cart-shopping"></i>Shop Now</button>
+            <button> <i className="fa-solid fa-cart-shopping"></i>Shop Now</button>
             <img src={commit} alt="" />
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="slick1">
-          <p><i class="fa-solid fa-fire-flame-curved"></i>Hot Deal In This Week</p>
+          <p><i className="fa-solid fa-fire-flame-curved"></i>Hot Deal In This Week</p>
           <p>Roco Wireless  <br /> Headphones</p>
           <div className="slick1img">
 
-            <button> <i class="fa-solid fa-cart-shopping"></i>Shop Now</button>
+            <button> <i className="fa-solid fa-cart-shopping"></i>Shop Now</button>
             <img src={commit} alt="" />
           </div>
         </div>
