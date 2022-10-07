@@ -2,8 +2,6 @@
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
-
-    /* background-color: rgb(173, 92, 92); */
 }
 .contact_headline{
 width: 100%;
@@ -84,7 +82,6 @@ background-color: #f8f8f8;
     right: 60px;
     z-index: -1;
 }
-/*------------------- FOTO TEXT 1 -----------------*/
 .img_text_div1{
     width: 100%;
     padding: 80px 0;
@@ -99,7 +96,6 @@ box-sizing: border-box;
     border-radius: 10px;
     width: 100%;
     height:auto;
-    /* height: 417px; */
 }
 
 .text_div1{
@@ -178,9 +174,8 @@ box-sizing: border-box;
 }.inner_text1 p{
     margin-bottom: 34px;
 }
-/* -----------BOXES------------ */
+
 .common{
-/* width: 100%; */
 position: relative;
 }
 
@@ -238,8 +233,6 @@ margin: 0 0 12px;
     z-index: -1;
 }
 
-/* -------------------??????????????????????????????????????????????------------------------------------------- */
-
 .commoncarousel{
     width: 100%;
     display: flex;
@@ -285,7 +278,6 @@ margin-right: 10px;
     color: #292930;
 }
 
-/*------------------- FOTO TEXT 2 -----------------*/
 .common3{
     width: 100%;
     padding: 80px 0 0;
@@ -300,14 +292,12 @@ margin-right: 10px;
     width: calc((100% * 5) / 12);
     padding: 0 15px;
     box-sizing: border-box;
-
-    display: flex;                  /* ???????????????????????????/ */
+    display: flex;                 
 }
 .img_div2 img{
     border-radius: 10px;
     width: 100%;
     height: auto;
-    /* height: 359px; */
 }
 
 .text_div2{
@@ -381,8 +371,6 @@ cursor: pointer;
     box-sizing: border-box;
 }
 
-
-/*------------------- FOTO -----------------*/
 .newsletter{
     width: 100%;
     padding: 80px 0 0 0;
@@ -444,16 +432,6 @@ border-radius: 5px;
     font-weight: 600;
 }
 
-
-
-/* @media screen and (min-width: 1200px){
-    .container {
-        max-width: 1160px;
-    }
-} */
-
-
-/* RESPONSIVLIK */
 @media screen and (max-width: 575px){
     .headline_icon {
         display: none;
@@ -513,7 +491,6 @@ border-radius: 5px;
         font-size: 31px;
     }
     
-    /*  *********************************** */
     .boxes_div1{
         width: 95%;
         display: flex;
@@ -523,13 +500,12 @@ border-radius: 5px;
         margin: 0 20px;
         width: 100%;
     }
-    /*  *********************************** */
+
     .commoncarouseltext{
         min-width: 89%;
         max-width: 89%;
     
     }
-    /*  *********************************** */
     
     .img_text_div2{
         width: 100%;
@@ -652,7 +628,6 @@ box-sizing: border-box;
     font-size: 31px;
 }
 
-/*  *********************************** */
 .boxes_div1{
     width: 95%;
     display: flex;
@@ -662,13 +637,12 @@ box-sizing: border-box;
     margin: 0 20px;
     width: 100%;
 }
-/*  *********************************** */
+
 .commoncarouseltext{
     min-width: 89%;
     max-width: 89%;
 
 }
-/*  *********************************** */
 
 .img_text_div2{
     width: 100%;

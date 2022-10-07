@@ -31,7 +31,6 @@ z-index: 2;
 }
 
 .slide{
-    /* border-radius: 10px; */
     display: contents;
     position: absolute;
     width: 100%;

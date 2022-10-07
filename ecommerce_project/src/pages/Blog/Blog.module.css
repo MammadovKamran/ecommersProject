@@ -2,7 +2,6 @@
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
-    /* background-color: red; */
 }
 .contact_headline{
 width: 100%;
@@ -84,22 +83,15 @@ background-color: #f8f8f8;
     z-index: -1;
 }
 
-/* -------------------------------BLOGS----------------------- */
-
 .blogs{
 width: 100%;
 display: flex;
 padding: 80px 0;
-/* background-color: yellow; */
 }
 
 .left_blog{
 width: calc((100% * 2) / 3);
 padding: 0 15px;
-/* background-color: green; */
-}
-.left_innerblog{
-
 }
 
 .first_leftblog{
@@ -108,14 +100,8 @@ padding: 0 15px;
     border-left: 6px solid #FAB8C4;
     border-radius: 6px;
     padding: 50px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
-.first_innerleftblog{
-
-}
 .first_innerleftblog h4{
 margin: 0 0 30px;
 font-weight: 500;
@@ -226,15 +212,10 @@ font-family: "Poppins";
     transform: scale(1.1);
 }
 
-/* --------------------------------------- */
 .second_leftblog{
     border-top: 1px solid #f3f3f3;
     padding: 60px 0 0;
     margin: 60px 0 0;
-}
-
-.second_innerleftblog{
-
 }
 
 .blog2_img{
@@ -248,7 +229,6 @@ margin: 0 0 30px;
     border-radius: 6px;
     border: 0;
     vertical-align: middle;
-    /* max-width: 100%; */
     height: auto;
 }
 
@@ -270,7 +250,6 @@ margin: 0 0 30px;
     font-family: "Poppins";
 }
 
-/* ---------------------------------------------- */
 .three_leftblog{
     border-top: 1px solid #f3f3f3;
     padding: 60px 0 0;
@@ -283,13 +262,6 @@ margin: 0 0 30px;
     border-left: 6px solid #FAB8C4;
     border-radius: 6px;
     padding: 50px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-}
-
-.first3_innerleftblog{
-
 }
 
 .first3_innerleftblog h4{
@@ -302,7 +274,6 @@ margin: 0 0 30px;
     margin: 0 0 30px;
 }
 
-/* ---------------------------------------------- */
 .four_leftblog{
     border-top: 1px solid #f3f3f3;
     padding: 60px 0 0;
@@ -367,7 +338,6 @@ font-weight: 900;
     z-index: 1;
 }
 
-/* ---------------------------------------------- */
 .five_leftblog{
     border-top: 1px solid #f3f3f3;
     padding: 60px 0 0;
@@ -391,16 +361,9 @@ font-weight: 900;
     font-family: "Poppins";
 }
 
-
-
-/* --------------------------------------------------------RIGHT------------------------------------------------- */
-
-
-
 .right_blog{
 width: calc(100% / 3);
 padding: 0 15px;
-/* background-color: rgb(92, 127, 194); */
 }
 .right_innerblog>div:not(:first-child){
 margin: 40px 0 0;
@@ -419,17 +382,11 @@ margin: 40px 0 0;
     font-family: "Poppins";
     font-size: 17px;
 }
-.right_posts{
-    height: calc(100% / 3);
-    /* ----------------------------- */
-}
+
 .right_post1, .right_post2, .right_post3{
-    /* height: 100%; */
     width: 100%;
     display: flex;
     align-items: center;
-    
-
     box-sizing: border-box;
 }
 .right_post1, .right_post2{
@@ -441,11 +398,8 @@ margin: 40px 0 0;
 .post1_img{
     width: 45%;
     height: 80px;
-    /* height: 100%; */
     box-sizing: border-box;
-    /* width: 120px; */
     margin: 0 20px 0 0;
-    /* min-width: 120px; */
     overflow: hidden;
     border-radius: 6px;
 }
@@ -471,7 +425,6 @@ flex-wrap: wrap;
 .content_date ul li{
     color:#777777;
     font-size: 14px;
-    padding: 0 15px;
     position: relative;
     margin-top: 0;
     margin-bottom: 0;
@@ -490,12 +443,6 @@ flex-wrap: wrap;
     top: 50%;
     transform: translateY(-50%);
 }
-
-
-
-
-
-/* ?????????????___________________________________________________ */
 
 .right_blog2 h6{
     color: #27272e;
@@ -520,10 +467,6 @@ flex-wrap: wrap;
     margin: 0 0 10px;
     font-size: 15px;
 }
-
-
-
-/* ?????????????___________________________________________________ */
 
 .right_blog3 h6{
     color: #27272e;
@@ -552,7 +495,6 @@ width: 100%;
 .right_blog3 form button i{
     color: #777777;
     font-size: 16px;
-    /* font-weight: 400; */
 }
 
 .right_blog3 form input{
@@ -571,8 +513,6 @@ width: 100%;
 border-color: #3577f0;
 }
 
-/* ?????????????___________________________________________________ */
-
 .right_blog4 h6{
     color: #27272e;
     font-weight: 500;
@@ -582,8 +522,6 @@ border-color: #3577f0;
 }
 .right_blog4 ul{
     margin-bottom: 0;
-    /* list-style: disc; */
-    /* padding: 0 0 0 20px; */
 }
 
 .right_blog4 ul li{
@@ -597,8 +535,6 @@ border-color: #3577f0;
 .right_blog4 ul li:hover{
 color: black;
 }
-
-/* ?????????????___________________________________________________ */
 
 .right_blog5 h6{
     color: #27272e;
@@ -633,14 +569,6 @@ background-color: #3577f0;
 border-color: #3577f0;
 color: #fff;
 }
-
-
-
-
-
-/* ---------------------------------------------------------------------- */
-
-
 
 .newsletter{
     width: 100%;
@@ -703,15 +631,237 @@ border-radius: 5px;
     font-weight: 600;
 }
 
+@media screen and (max-width: 575px){
+    .headline_icon {
+        display: none;
+    }
+    .headline_text{
+        max-width: 100%;
+    }
+    .contact_headline{
+        display: inline-block;
+    }
+    .headline_text h1{
+        font-size: 23px;
+    }
+
+    .blogs{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 80px 0;
+        }
+            
+        .left_blog{
+        width: 100%;
+        padding: 0 15px;
+        }
+    
+        
+        .right_blog{
+        width: 100%;
+        padding: 0 15px;
+        margin: 60px 0 0;
+        }
+    
+        .post1_img{
+            width: 20%;
+    
+        }
+      
+        .post1_content{
+            width: 80%;
+        }
+        
+        .content_date ul li{
+            padding: 0 15px;
+        }
+    
+        .first_innerleftblog h4{
+            font-size: 20px;
+        }
+    
+        .blog2_content h4{
+            font-size: 20px;
+        }
+    
+        .blog5_content h4{
+            font-size: 20px;
+        }
+    
+        .btn_1 button{
+            font-size: 14px;
+        }
+
+        .first3_innerleftblog h4{
+            font-size: 24px;
+        }
+
+        .newsletter_title{
+            top: 50%;
+            transform: translate(18%, -50%);
+        }
+    
+        .newsletter_title p:nth-child(2) {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .newsletter_title button{
+            height: 50px;
+            width: 120px;
+            font-size: 12px;
+        }
+}
+
+@media screen and (min-width: 575px) and (max-width: 767px){
+    .headline_icon {
+        display: none;
+    }
+    .headline_text{
+        max-width: 100%;
+    }
+    .contact_headline{
+        display: inline-block;
+    }
+    .headline_text h1{
+        font-size: 28px;
+    }
+
+    .blogs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0;
+    }
+        
+    .left_blog{
+    width: 100%;
+    padding: 0 15px;
+    }
+
+    
+    .right_blog{
+    width: 100%;
+    padding: 0 15px;
+    margin: 60px 0 0;
+    }
+
+    .post1_img{
+        width: 20%;
+
+    }
+    
+    .post1_content{
+        width: 80%;
+    }
+    
+    .content_date ul li{
+        padding: 0 15px;
+    }
+
+    .first_innerleftblog h4{
+        font-size: 20px;
+    }
+
+    .blog2_content h4{
+        font-size: 20px;
+    }
+
+    .blog5_content h4{
+        font-size: 20px;
+    }
+
+    .btn_1 button{
+        font-size: 14px;
+    }
+
+    .first3_innerleftblog h4{
+        font-size: 28px;
+    }
+
+    .newsletter_title{
+        top: 50%;
+        transform: translate(20%, -50%);
+    }
+
+    .newsletter_title p:nth-child(2) {
+        font-size: 26px;
+    }
+
+    .newsletter_title button{
+        height: 60px;
+        width: 140px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .container {
+        max-width: 768px;
+    }
+
+    .blogs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0;
+    }
+        
+    .left_blog{
+    width: 100%;
+    padding: 0 15px;
+    }
+
+    
+    .right_blog{
+    width: 100%;
+    padding: 0 15px;
+    margin: 60px 0 0;
+    }
+
+    .post1_img{
+        width: 20%;
+
+    }
+  
+    .post1_content{
+        width: 80%;
+    }
+    
+    .content_date ul li{
+        padding: 0 15px;
+    }
+
+    .first_innerleftblog h4{
+        font-size: 22px;
+    }
+
+    .blog2_content h4{
+        font-size: 22px;
+    }
+
+    .blog5_content h4{
+        font-size: 22px;
+    }
+
+    .newsletter_title{
+        top: 50%;
+        transform: translate(20%, -50%);
+    }
+
+    .newsletter_title p:nth-child(2) {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .container {
+        max-width: 1024px;
+    }
 
 
-
-
-
-
-
-
-
+}
 
 @media screen and (min-width: 1200px){
     .container {

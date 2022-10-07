@@ -1,7 +1,4 @@
 import React from 'react';
-
-// import bstyl from './BlogSlickslider.module.css'
-
 import './Btnslide.css'
 
 export default function BtnSlider({direction, moveSlide}){

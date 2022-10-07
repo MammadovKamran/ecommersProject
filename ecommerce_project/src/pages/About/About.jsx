@@ -1,4 +1,3 @@
-// import React from 'react'
 import React from 'react'
 import aboutstyle from './About.module.css'
 import producticon from '../../assets/image/product.png'
@@ -58,7 +57,6 @@ function about() {
           </div>
            
         </div>
-{/* ----------------------------------------------------------- */}
         <div className={aboutstyle.common}>
             <div className={aboutstyle.container}>
               <div className={aboutstyle.boxes_div1}>
@@ -95,7 +93,6 @@ function about() {
               </div>
             </div>
         </div>
-{/* ----------------------------------------------------------- */}
         
         <div className={aboutstyle.commoncarousel}>
           <div className={aboutstyle.commoncarouseltext}>
@@ -104,7 +101,6 @@ function about() {
           </div>
           <Carousel />
         </div>
-{/* ----------------------------------------------------------- */}
 
 
         <div className={aboutstyle.common3}>

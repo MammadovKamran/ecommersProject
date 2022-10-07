@@ -46,7 +46,6 @@ const Blog = () => {
           <div className={blogstyle.blogs}>
               <div className={blogstyle.left_blog}>
                   <div className={blogstyle.left_innerblog}>
-                        {/* --------1-------- */}
                     <div className={blogstyle.first_leftblog}>
                       <div className={blogstyle.first_innerleftblog}>
                         <h4>Dubai’s Offers its Take Nike SB Dunk.</h4>
@@ -165,7 +164,6 @@ const Blog = () => {
                   </div>
               </div>
 
-{/* ----------------------------------------RIGHT---------------------------------------------- */}
               <div className={blogstyle.right_blog}>
                   <div className={blogstyle.right_innerblog}>
 

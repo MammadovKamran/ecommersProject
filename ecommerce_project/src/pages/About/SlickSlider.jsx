@@ -18,7 +18,6 @@ function Carousel() {
 
     }
 
-   
     return (
         <div className={slickstyle.content}>
             <Slider {...sliderSettings}>

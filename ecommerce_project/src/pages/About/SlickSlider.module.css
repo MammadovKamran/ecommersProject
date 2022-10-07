@@ -40,15 +40,12 @@ margin: 0;
     .content{
         min-width: 89%;
         max-width: 89%;
-
-
     }
 }
 @media screen and (min-width: 768px) and (max-width: 991px){
     .content{
         max-width: 73%;
         min-width: 73%;
-
     }
 }
 
@@ -56,7 +53,6 @@ margin: 0;
     .content{
         max-width: 85%;
         min-width: 85%;
-
     }
  
 
@@ -66,7 +62,5 @@ margin: 0;
     .content{
         max-width: 95%;
         min-width: 73%;
-
     }
-
 }
